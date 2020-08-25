@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Dashboard</title>
+    <title>Shirt Style - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{asset('/css/default/all.min.css') }}" rel="stylesheet" type="text/css">
