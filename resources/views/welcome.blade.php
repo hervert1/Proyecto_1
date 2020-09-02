@@ -20,8 +20,9 @@
         <div class="card shadow mb-4">
           <div class="card-header py-3">
             <h6 class="m-0 font-weight-bold text-success">Nuevo Producto</h6>
-          </div>
-          <form>
+          </div> 
+          <form id="FormularioAgregarProducto">
+            @csrf 
             <div class="card-body">
               <div class="border-left-success">
                 <h5 class="ml-2">Información General</h5>
@@ -30,15 +31,15 @@
                 <div class="form-row">
                   <div class="form-group col-md-4">
                     <label for="inputCodigo">Codigo</label>
-                    <input type="text" class="form-control" id="inputCodigo">
+                    <input type="text" class="form-control" id="inputCodigo" name="inputCodigo">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputMarca">Marca</label>
-                    <input type="text" class="form-control" id="inputMarca">
+                    <input type="text" class="form-control" id="inputMarca" name="inputMarca">
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputColor">Color</label>
-                    <input type="text" class="form-control" id="inputColor">
+                    <input type="text" class="form-control" id="inputColor" name="inputColor">
                   </div>
                 </div>
                 <div class="form-group ">
@@ -48,11 +49,11 @@
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputPrecio">Precio</label>
-                    <input type="number" class="form-control" id="inputPrecio">
+                    <input type="number" class="form-control" id="inputPrecio" name="inputPrecio">
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputPrecioVenta">Precio Venta</label>
-                    <input type="number" class="form-control" id="inputPrecioVenta">
+                    <input type="number" class="form-control" id="inputPrecioVenta" name="inputPrecioVenta">
                   </div>
                 </div>
               <div class="border-left-success">
@@ -62,23 +63,23 @@
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputImagen1">Imagen1</label>
-                  <input type="file" class="form-control-file" id="inputImagen1">
+                  <input type="file" class="form-control-file" id="inputImagen1" name="inputImagen1">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputImagen2">Imagen2</label>
-                  <input type="file" class="form-control-file" id="inputImagen2">
+                  <input type="file" class="form-control-file" id="inputImagen2" name="inputImagen2">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputImagen3">Imagen3</label>
-                  <input type="file" class="form-control-file" id="inputImagen3">
+                  <input type="file" class="form-control-file" id="inputImagen3" name="inputImagen3">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputImagen4">Imagen4</label>
-                  <input type="file" class="form-control-file" id="inputImagen4">
+                  <input type="file" class="form-control-file" id="inputImagen4" name="inputImagen4">
                 </div>
                 <div class="form-group col-md-4">
                   <label for="inputImagen5">Imagen5</label>
-                  <input type="file" class="form-control-file" id="inputImagen5">
+                  <input type="file" class="form-control-file" id="inputImagen5" name="inputImagen5">
                 </div>
                 </div>
               <div class="border-left-success">
@@ -88,41 +89,41 @@
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputTalla1">Talla</label>
-                  <input type="text" value="CH" class="form-control" id="inputTalla" readonly>
+                  <input type="text" value="CH" class="form-control" id="inputTalla1"  name="inputTalla1" readonly>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="inputDisponible">Disponible</label>
-                  <input type="number" class="form-control" id="inputDisponible">
+                  <label for="inputDisponible1">Disponible</label>
+                  <input type="number" class="form-control" id="inputDisponible1" name="inputDisponible1">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputTalla2">Talla</label>
-                  <input type="text" value="M" class="form-control" id="inputTalla" readonly>
+                  <input type="text" value="M" class="form-control" id="inputTalla2" name="inputTalla2" readonly>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="inputDisponible">Disponible</label>
-                  <input type="number" class="form-control" id="inputDisponible">
+                  <label for="inputDisponible2">Disponible</label>
+                  <input type="number" class="form-control" id="inputDisponible2" name="inputDisponible2">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-4">
                   <label for="inputTalla3">Talla</label>
-                  <input type="text" value="L" class="form-control" id="inputTalla" readonly>
+                  <input type="text" value="L" class="form-control" id="inputTalla3" name="inputTalla3" readonly>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="inputDisponible">Disponible</label>
-                  <input type="number" class="form-control" id="inputDisponible">
+                  <label for="inputDisponible3">Disponible</label>
+                  <input type="number" class="form-control" id="inputDisponible3" name="inputDisponible3">
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group col-md-4">
-                  <label for="inputTalla">Talla</label>
-                  <input type="text" value="XL" class="form-control" id="inputTalla" readonly>
+                  <label for="inputTalla4">Talla</label>
+                  <input type="text" value="XL" class="form-control" id="inputTalla4" name="inputTalla4" readonly>
                 </div>
                 <div class="form-group col-md-4">
-                  <label for="inputDisponible">Disponible</label>
-                  <input type="number" class="form-control" id="inputDisponible">
+                  <label for="inputDisponible4">Disponible</label>
+                  <input type="number" class="form-control" id="inputDisponible4" name="inputDisponible4">
                 </div>
                 </div>
 
@@ -140,5 +141,8 @@
   </div>
   <!-- /.container-fluid -->
 
+  @section('scripts')
+  <script src="{{asset('/js/productos.js')}}"></script>
 
-  @include('default.footer')
+  @endsection
+  @extends('default.footer')

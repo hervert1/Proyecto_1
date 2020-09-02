@@ -47,12 +47,7 @@
 <!-- Custom scripts for all pages-->
 <script src="{{asset('/js/default/sb-admin-2.min.js')}}"></script>
 
-<!-- Page level plugins -->
-<script src="{{asset('/js/default/Chart.min.js')}}"></script>
-
-<!-- Page level custom scripts -->
-<script src="{{asset('/js/default/chart-area-demo.js')}}"></script>
-<script src="{{asset('/js/default/chart-pie-demo.js')}}"></script>
+@yield('scripts')
 
 </body>
 
