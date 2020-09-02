@@ -17,7 +17,7 @@ $(document).ready(function () {
 
             },
             success: function (response ) {
-                console.log(response)
+                console.log(response.mensaje)
             },
             error: function(response ){
                 console.log(response)
