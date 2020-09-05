@@ -31,29 +31,29 @@
                 <div class="form-row">
                   <div class="form-group col-md-4">
                     <label for="inputCodigo">Codigo</label>
-                    <input type="text" class="form-control" id="inputCodigo" name="inputCodigo" required>
+                    <input type="text" class="form-control" id="inputCodigo" name="inputCodigo" >
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputMarca">Marca</label>
-                    <input type="text" class="form-control" id="inputMarca" name="inputMarca" required>
+                    <input type="text" class="form-control" id="inputMarca" name="inputMarca" >
                   </div>
                   <div class="form-group col-md-4">
                     <label for="inputColor">Color</label>
-                    <input type="text" class="form-control" id="inputColor" name="inputColor" required>
+                    <input type="text" class="form-control" id="inputColor" name="inputColor" >
                   </div>
                 </div>
                 <div class="form-group ">
                   <label for="inputDescripcion">Descripcion</label>
-                  <textarea class="form-control" id="inputDescripcion" rows="3" name="inputDescripcion" required></textarea>
+                  <textarea class="form-control" id="inputDescripcion" rows="3" name="inputDescripcion" ></textarea>
                 </div>
                 <div class="form-row">
                   <div class="form-group col-md-6">
                     <label for="inputPrecio">Precio</label>
-                    <input type="number" class="form-control" id="inputPrecio" name="inputPrecio" required>
+                    <input type="number" class="form-control" id="inputPrecio" name="inputPrecio" >
                   </div>
                   <div class="form-group col-md-6">
                     <label for="inputPrecioVenta">Precio Venta</label>
-                    <input type="number" class="form-control" id="inputPrecioVenta" name="inputPrecioVenta" required>
+                    <input type="number" class="form-control" id="inputPrecioVenta" name="inputPrecioVenta" >
                   </div>
                 </div>
               <div class="border-left-success">
